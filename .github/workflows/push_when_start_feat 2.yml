@@ -1,9 +1,10 @@
-name: schedule Every Tuesday at 3am
+name: Push when start by branch feat
 
 on:
-  schedule:
-    - cron: '0 3 * * TUE' 
-    
+  push:
+    branches:
+      - "feat/**"
+
   workflow_dispatch:
 
 jobs:

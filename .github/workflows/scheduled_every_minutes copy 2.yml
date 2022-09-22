@@ -1,9 +1,9 @@
-name: schedule Every Tuesday at 3am
+name: schedule every 1h30
 
 on:
   schedule:
-    - cron: '0 3 * * TUE' 
-    
+    - cron:  '1-59 * * * *'
+
   workflow_dispatch:
 
 jobs:

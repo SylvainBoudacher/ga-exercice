@@ -1,9 +1,10 @@
-name: schedule Every Tuesday at 3am
+name: Events exercices
 
 on:
-  schedule:
-    - cron: '0 3 * * TUE' 
-    
+  push:
+    paths:
+      - "pouet"
+
   workflow_dispatch:
 
 jobs:

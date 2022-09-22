@@ -1,9 +1,10 @@
-name: schedule Every Tuesday at 3am
+name: Push all except staging branches
 
 on:
-  schedule:
-    - cron: '0 3 * * TUE' 
-    
+  push:
+    branches:
+      - '!staging'
+
   workflow_dispatch:
 
 jobs:

@@ -1,9 +1,10 @@
-name: schedule Every Tuesday at 3am
+name: Pr is closed
 
 on:
-  schedule:
-    - cron: '0 3 * * TUE' 
-    
+  pull_request:
+    types:
+      - closed
+
   workflow_dispatch:
 
 jobs:

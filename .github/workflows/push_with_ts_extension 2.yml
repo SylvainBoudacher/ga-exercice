@@ -1,9 +1,10 @@
-name: schedule Every Tuesday at 3am
+name: Push when ts file is modify
 
 on:
-  schedule:
-    - cron: '0 3 * * TUE' 
-    
+  push:
+    paths:
+      - '**.ts'
+
   workflow_dispatch:
 
 jobs:

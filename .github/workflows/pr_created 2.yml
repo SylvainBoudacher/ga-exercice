@@ -1,9 +1,10 @@
-name: schedule Every Tuesday at 3am
+name: Pr is opened
 
 on:
-  schedule:
-    - cron: '0 3 * * TUE' 
-    
+  pull_request:
+    types:
+      - opened
+
   workflow_dispatch:
 
 jobs:
